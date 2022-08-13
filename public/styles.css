@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    padding: 0 16px;
+    background-color: #feffed;
+    background-image: url("https://www.transparenttextures.com/patterns/food.png");
+    
+   }
+
+   .container{
+    
+    
+   }
+  .details{
+    
+  }
+  .title{
+    font-size: 30px;
+    color: #4f4f4f;
+  }
+  .secondTitle{
+    color: #4f4f4f;
+    
+  }
+
+  p{
+    padding:  16px;
+    color:#765900;
+  }
+
+  h3{
+    padding: 4px 16px;
+  }
+
+  .head{
+    padding-top: 50px;
+    text-align: left;
+  }
+
+  .homeBtn{
+    background-color: #F2C94C;
+    font-size: 14px;
+    border-radius: 30px;
+    color:#4f4f4f;
+    padding: 4px 10px;
+    border: 3px solid #ffffff; 
+    transition: .3s;
+  }
+  .usePart{
+    text-align:center;
+    left:0;
+    right:0;
+    position: fixed;
+    bottom: 80px; 
+  }
+
+  .homeBtn:hover {
+    box-shadow: 6px 6px #F2994A;
+    transition: .3s;
+  }
+
+  .details{
+    margin: 0 10%;
+  }
+
+  .leftText{
+    
+    width: 240px;
+    display:inline-block;
+    padding: 0 16px 16px 16px;
+    margin:auto;
+    color: #4f4f4f;
+  }
+  .rightText{
+    
+    vertical-align:top;
+    width: 600px; 
+    display:inline-block;
+    padding: 0 16px 16px 16px;
+    margin:auto;
+    color: #4f4f4f;
+    
+  }
+  .detailText{
+    margin-top: 20px;
+    padding: 20px 20px 50px 20px;
+    background-color: #F2C94C;
+    border-radius: 30px; 
+    min-width: 600px; 
+    border: 2px solid #010101; 
+    
+  }
