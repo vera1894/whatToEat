@@ -10,9 +10,9 @@ module.exports = function (app) {
   //   })
   // );
   app.use(
-    '/jisuapi',
+    'jisuapi',
     createProxyMiddleware({
-      target: 'https://way.jd.com',
+      target: 'https://way.jd.com/',
       changeOrigin: true,
     })
   );
