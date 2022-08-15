@@ -10,7 +10,7 @@ module.exports = function (app) {
   //   })
   // );
   app.use(
-    '/',
+    '**',
     createProxyMiddleware({
       target: 'https://way.jd.com',
       changeOrigin: true,
