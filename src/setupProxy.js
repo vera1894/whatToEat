@@ -10,10 +10,11 @@ module.exports = function (app) {
   //   })
   // );
   app.use(
-    '**',
+    '/jisuapi',
     createProxyMiddleware({
       target: 'https://way.jd.com',
       changeOrigin: true,
+      toProxy:true
     })
   );
 }
