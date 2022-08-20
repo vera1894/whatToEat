@@ -18,11 +18,14 @@ function App() {
 
     function getData() {
 
-        const id = Math.floor(Math.random() * 50000) + 1; //随机id
-        
+        const id = Math.floor(Math.random() * 50000) + 1; //随机id        
         console.log("id:" + id)
+
+        const config1 = {
+            headers: { 'Content-Type': 'application/json' }
+        }
         var api = 'https://way.jd.com/jisuapi/detail?id=' + id + '&appkey=1ff73a31e2a4cfda225d64a2fdcb844d';
-        axios.get(api)
+        axios.get(api,config1)
             .then(function (response) {
                 console.log(response.data.result.result);
                 result = response.data.result.result;
