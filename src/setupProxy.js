@@ -15,9 +15,7 @@ module.exports = function (app) {
       target: 'https://way.jd.com',
       changeOrigin: true,
       toProxy:true,
-      router:{
-        'vera1894.github.io':''
-      }
+      
     })
   );
 }

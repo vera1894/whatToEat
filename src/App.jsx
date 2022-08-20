@@ -21,8 +21,9 @@ function App() {
         const id = Math.floor(Math.random() * 50000) + 1; //随机id        
         console.log("id:" + id)
 
-        var api = '/jisuapi/detail?id=' + id + '&appkey=1ff73a31e2a4cfda225d64a2fdcb844d';
-        axios.get(api)
+        let key = '1ff73a31e2a4cfda225d64a2fdcb844d';
+        var api = '/jisuapi/detail';
+        axios.get(api,{params:{id:id,appkey:key}})
             .then(function (response) {
                 console.log(response.data.result.result);
                 result = response.data.result.result;
