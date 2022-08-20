@@ -14,7 +14,7 @@ module.exports = function (app) {
     createProxyMiddleware({
       target: 'https://way.jd.com',
       changeOrigin: true,
-      toProxy:true
+      toProxy:false
     })
   );
 }
