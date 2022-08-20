@@ -14,7 +14,10 @@ module.exports = function (app) {
     createProxyMiddleware({
       target: 'https://way.jd.com',
       changeOrigin: true,
-      toProxy:false
+      toProxy:true,
+      router:{
+        'vera1894.github.io':''
+      }
     })
   );
 }
